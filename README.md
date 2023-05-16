@@ -1,4 +1,2 @@
 # frogbot-test-two
-dd
-..
-..
+d
