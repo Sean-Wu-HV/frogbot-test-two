@@ -8,9 +8,6 @@ on:
 jobs:
   runPR:
     runs-on: ubuntu-latest
-#     container:
-#       image: cicd-oci-release-orl.repo.orl.eng.hitachivantara.com/lumada-common-services/data-plane:20230207.5-maven-node
-    environment: frogbot
     steps:
     
     - uses: actions/checkout@v3
