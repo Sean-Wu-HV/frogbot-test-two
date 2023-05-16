@@ -1,4 +1,1 @@
 # test-frogbot-two
-...
-
-.
