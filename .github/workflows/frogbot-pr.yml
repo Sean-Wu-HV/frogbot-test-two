@@ -3,6 +3,9 @@ name: PR
 on:
   pull_request_target:
     types: [opened, synchronize]
+permissions:
+  pull-requests: write
+  contents: read
 
 jobs:
   runPR:
