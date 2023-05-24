@@ -3,7 +3,9 @@ name: PR
 on:
   pull_request_target:
     types: [opened, synchronize]
-
+permissions:
+  pull-requests: write
+  contents: read
 jobs:
   runPR:
     runs-on: ubuntu-latest
@@ -20,9 +22,6 @@ jobs:
           java-version: "11"
           distribution: "temurin"
           cache: maven
-
-      - name: Build with Maven
-        run: mvn clean install --file pom.xml
 
       - name: FrogBot
         uses: jfrog/frogbot@v2.8.4
